@@ -1,6 +1,6 @@
 public class Veiculo {
 	String cor;
-	int velocidade;
+	private int velocidade;
 	int numeroRodas;
 	int numeroPortas;
 	boolean possuiArCondicionado;
@@ -27,4 +27,9 @@ public class Veiculo {
 			this.velocidade = this.velocidadeMaxima;
 		}
 	}
+	
+	public int retornarVelocidade() {
+		return this.velocidade;
+	}
+	
 }
