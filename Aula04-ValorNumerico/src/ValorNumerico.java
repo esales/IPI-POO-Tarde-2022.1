@@ -1,4 +1,3 @@
-
 public class ValorNumerico {
 	private int valor;
 	
@@ -25,4 +24,18 @@ public class ValorNumerico {
 	public void imprimirValor() {
 		System.out.println("Valor atual: " + this.valor);
 	}
+	
+	public int recuperarValor() {
+		return this.valor;
+	} //getValor
+	
+	public void setarValor(int numero) {
+		if (numero < 500)
+			this.valor = numero;
+	} //setValor
+	
+	
+	
+	
+	
 }

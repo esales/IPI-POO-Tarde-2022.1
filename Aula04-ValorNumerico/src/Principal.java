@@ -1,8 +1,10 @@
+import java.util.Scanner;
 
 public class Principal {
 
 	public static void main(String[] args) {
-		ValorNumerico valorNumerico = new ValorNumerico(50);
+		ValorNumerico valorNumerico = new ValorNumerico(10);
+		
 		valorNumerico.imprimirValor();
 		
 		valorNumerico.incrementarValor();
@@ -16,6 +18,11 @@ public class Principal {
 		
 		valorNumerico.zerarValor();
 		valorNumerico.imprimirValor();
+		
+		int numero = valorNumerico.recuperarValor();
+		System.out.println("número: " +  numero);
+		
+		valorNumerico.setarValor(9999);
+		valorNumerico.imprimirValor();
 	}
-
 }
